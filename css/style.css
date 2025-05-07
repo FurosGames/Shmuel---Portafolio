@@ -1,0 +1,628 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  font-family: 'Mabypro';
+}
+
+/* ----------------FUENTES TIPOGRAFICAS---------------- */
+@font-face {
+  font-family: 'Mabypro_regular';
+  src: url('../Font/MabryPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mabypro';
+  src: url('../Font/MabryPro-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Power-Grotesk';
+  src: url('../Font/PowerGrotesk-UltraBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  color: var(--color-secundario);
+}
+
+/* ----------------VARIABLES---------------- */
+:root {
+  --background-primario: #0F051D;
+  --color-primario: white;
+  --color-secundario: #b7b4bb;
+}
+
+/* ----------------DEGRADADOS---------------- */
+.link_degradado {
+  border: none;
+  color: var(--color-primario);
+  font-size: 20px;
+  letter-spacing: 1px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+/* ----------------TITULOS---------------- */
+
+/* titulos */
+.titulos {
+  font-size: 60px;
+  font-family: 'Power-Grotesk';
+  color: var(--color-primario);
+  letter-spacing: 2px;
+}
+
+.titulos_degradados {
+  font-size: 60px;
+  font-family: 'Power-Grotesk';
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+
+/* subtitulos */
+.subtitulos {
+  color: var(--color-primario);
+  font-family: 'Power-Grotesk';
+  letter-spacing: 3px;
+  font-size: 48px;
+}
+
+/* parrafos */
+.texto {
+  font-family: 'Mabypro_regular';
+  color: var(--color-secundario);
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0.1px;
+}
+
+/* Números */
+.numeros {
+  font-family: 'Power-Grotesk';
+  font-size: 30px;
+  font-weight: 700;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ----------------ENCABEZADO---------------- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Pseudoelemento animado */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: #0f051d;
+  /* o cualquier color de fondo que desees */
+  transition: height 0.8s ease;
+  z-index: -1;
+  /* Para que quede detrás del contenido */
+}
+
+/* Clase que activa la animación */
+header.scrolled::before {
+  height: 100%;
+}
+
+header a,
+.anima_degradado_link {
+  color: var(--color-primario);
+  font-size: 20px;
+  font-family: 'Mabypro';
+  position: relative;
+  transition: color 0.5s ease, font-size 0.3s ease;
+}
+
+.anima_degradado_link:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  transition: width 0.5s ease;
+}
+
+.anima_degradado_link:hover:after {
+  width: 100%;
+}
+
+.link-logo {
+  width: 50px;
+}
+
+.link-contacto {
+  color: var(--color-primario);
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+.hamburguesa {
+  background-color: #0f051d;
+  display: none !important;
+}
+
+/* ----------------BURBUJAS DEGRADADOS---------------- */
+.ctn_degradado {
+  height: 100vh;
+  left: 0;
+  mix-blend-mode: overlay;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.ctn_degradado>img:nth-of-type(1) {
+  left: -4%;
+  top: -4%;
+}
+
+.ctn_degradado>img:nth-of-type(2) {
+  right: -4%;
+  bottom: -4%;
+}
+
+.degradado_circular {
+  filter: blur(80px);
+  position: fixed;
+  width: 550px;
+}
+
+/* ----------------SECCIÓN PRINCIPAL---------------- */
+#principal {
+  height: 120vh;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagenes_grid_principal {
+  width: 100%;
+  height: 100%;
+  background-image: url(../Recursos/collection_cta.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.titulo {
+  color: var(--color-primario);
+  font-family: 'Power-Grotesk';
+  letter-spacing: 2px;
+  font-size: 65px;
+}
+
+.slogan {
+  font-family: 'Mabypro';
+  color: var(--color-secundario);
+  letter-spacing: 2px;
+}
+
+.ctn_imagenes_slider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  animation: scroll 10s linear infinite;
+  padding-left: 50%;
+  /* Empieza centrado */
+  transform: translateX(0);
+}
+
+.ctn_imagenes_slider img {
+  width: 170px;
+  margin: 0 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------------- HABILIDADES ---------------- */
+.programas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(35, 1fr); */
+}
+
+.cards_habilidades {
+  height: 230px;
+  border-radius: 25px;
+  background-color: hsla(0, 0%, 100%, .05);
+}
+
+.cards_habilidades img {
+  width: 150px;
+}
+
+.card_programa_uno {
+  grid-column: 1/3;
+  grid-row: 1/11;
+}
+
+.card_programa_dos {
+  grid-column: 3/5;
+  grid-row: 1/11;
+}
+
+.card_programa_tres {
+  grid-column: 1/3;
+  grid-row: 11/21;
+}
+
+.card_programa_cuatro {
+  grid-column: 3/5;
+  grid-row: 11/21;
+}
+
+.card_programa_cinco {
+  grid-column: 1/3;
+  grid-row: 21/31;
+}
+
+.card_programa_seis {
+  grid-column: 3/5;
+  grid-row: 21/31;
+}
+
+.descripcion_cartas_habilidades {
+  color: var(--color-secundario);
+  font-size: 18px;
+
+}
+
+/* ---------------- ACERCA DE ---------------- */
+.texto_acerca_01,
+.texto_acerca_02 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+  gap: 20px;
+}
+
+.imagen_acerca_01,
+.imagen_acerca_02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen_acerca_de {
+  width: 400px;
+  animation: levitar 5s ease-in-out infinite;
+}
+
+@keyframes levitar {
+  0% {
+    transform: translateY(-30px);
+    /* Arriba */
+  }
+
+  50% {
+    transform: translateY(0px);
+    /* Abajo (posición normal) */
+  }
+
+  100% {
+    transform: translateY(-30px);
+    /* Vuelve arriba */
+  }
+}
+
+/* ----------------PROYECTOS---------------- */
+.mejores_proyectos {
+  width: 100vh;
+  height: auto;
+  gap: 20px;
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-rows: repeat(50, 1fr); */
+}
+
+.ctn_img_1 {
+  grid-column: 1/2;
+  grid-row: 3/25;
+}
+
+.ctn_img_2 {
+  grid-column: 2/3;
+  grid-row: 1/22;
+}
+
+.ctn_img_3 {
+  grid-column: 3/4;
+  grid-row: 3/25;
+}
+
+.ctn_img_4 {
+  grid-column: 4/5;
+  grid-row: 1/22;
+}
+
+.ctn_img_5 {
+  grid-column: 1/2;
+  grid-row: 25/47;
+}
+
+.ctn_img_6 {
+  grid-column: 2/3;
+  grid-row: 22/44;
+}
+
+.ctn_img_7 {
+  grid-column: 3/4;
+  grid-row: 25/47;
+}
+
+.ctn_img_8 {
+  grid-column: 5/4;
+  grid-row: 22/44;
+}
+
+.ctn_cartas {
+  border-radius: 24px;
+  background-color: hsla(0, 0%, 100%, .05);
+}
+
+.back_img {
+  width: 100%;  
+  height: 80%;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+}
+
+.titulo_cartas {
+  font-family: 'Power-Grotesk';
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--color-primario);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.descripcion_cartas {
+  color: var(--color-secundario);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* .ir_trabajos {
+  width: 60px !important;
+} */
+
+/* ----------------FONDO DE LAS CARTAS---------------- */
+.fondo_miniatura_santi {
+  background-image: url(../Recursos/Miniatura\ Santiago\ B..png);
+}
+
+.fondo_corre_mi_tierra {
+  background-image: url(../Recursos/CorreMiTierra\ \(2\).png);
+}
+
+.fondo_f2r {
+  background-image: url(../Recursos/F2r\ 1\ \(1\).png);
+}
+
+.fondo_crackbee {
+  background-image: url(../Recursos/Crackbee.png);
+}
+
+.fondo_cumpleaños {
+  background-image: url(../Recursos/CumpleañosOctubre.png);
+}
+
+.fondo_nebraska {
+  background-image: url(../Recursos/Nebraska.png);
+}
+
+.fondo_maraton_medellin {
+  background-image: url(../Recursos/MaratonMedellín.png);
+}
+
+.fondo_gran_fondo_ibague {
+  background-image: url(../Recursos/GranFondoIbague.png);
+}
+
+/* ----------------FOOTER---------------- */
+
+footer {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.imagen_slider_footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.imagen_slider_footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../Recursos/collection_cta.png);
+  /* background-size: cover; */
+  background-position: center;
+  opacity: 0.04;
+  /* Cambia este valor según la opacidad deseada */
+}
+
+.input_mensaje {
+  width: 80%;
+  height: auto;
+  background-color: hsla(0, 0%, 100%, .05);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 12px 25px;
+  color: white;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.enviar_form {
+  /* width: 100%; */
+  width: auto;
+  padding: 10px;
+  border: none;
+  color: var(--color-primario);
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+.redes-sociales {
+  color: var(--color-secundario);
+}
+
+.linea {
+  background: var(--color-secundario);
+  border: none;
+  height: 4px;
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .hamburguesa {
+    display: flex !important;
+  }
+
+  .encabezado_escritorio {
+    display: none;
+  }
+
+  .link-contacto {
+    width: 28%;
+  }
+
+  /* ---------------- PAG PRINCIPAL---------------- */
+
+  #principal {
+    height: 140vh;
+  }
+
+  /* ---------------- HABILIDADES ---------------- */
+
+  .programas {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cards_habilidades {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    height: 280px;
+    flex-direction: column;
+    text-align: center;
+    grid-column: span 1 !important;
+    /* Asegura 1 columna por carta */
+    grid-row: auto !important;
+    /* Libera restricciones de filas */
+  }
+
+  .cards_habilidades img {
+    width: 80px;
+  }
+
+  /* ---------------- ACERCA DE ---------------- */
+  .texto_acerca_01,
+  .texto_acerca_02 {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ----------------PROYECTOS---------------- */
+  .mejores_proyectos {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .ctn_cartas {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    flex-direction: column;
+    text-align: center;
+    grid-column: span 1 !important;
+    /* Asegura 1 columna por carta */
+    grid-row: auto !important;
+    /* Libera restricciones de filas */
+  }
+
+
+  /* ----------------FOOTER---------------- */
+  form {
+    flex-direction: column;
+  }
+
+  .input_mensaje {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .enviar_form {
+    width: 50%;
+  }
+
+  .ctn_redes {
+    flex-direction: column;
+  }
+
+}

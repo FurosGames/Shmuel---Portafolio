@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+    font-family: 'Mabypro';
+}
+
+.ctn_trabajos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.cartas_trabajos {
+    border-radius: 25px;
+    background-color: hsla(0, 0%, 100%, .05);
+    padding: 1rem;
+}
+
+/* ----------------DISÑEO GRAFICO---------------- */
+.ctn_proyectos_grafico {
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(25, 1fr); */
+}
+
+.ctn_cartas_grafico_uno {
+    grid-column: 1/2;
+    grid-row: 3/25;
+}
+
+.ctn_cartas_grafico_dos {
+    grid-column: 2/3;
+    grid-row: 1/23;
+}
+
+.ctn_cartas_grafico_tres {
+    grid-column: 3/4;
+    grid-row: 3/25;
+}
+
+.ctn_cartas_grafico_cuatro {
+    grid-column: 4/5;
+    grid-row: 1/23;
+}
+
+/* ----------------AUDIOVISUAL---------------- */
+.ctn_proyectos_audiovisual {
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(71, 1fr); */
+}
+
+.ctn_cartas_audiovisual_uno {
+    grid-column: 1/2;
+    grid-row: 3/25;
+}
+
+.ctn_cartas_audiovisual_dos {
+    grid-column: 2/3;
+    grid-row: 1/23;
+}
+
+.ctn_cartas_audiovisual_tres {
+    grid-column: 3/4;
+    grid-row: 3/25;
+}
+
+.ctn_cartas_audiovisual_cuatro {
+    grid-column: 4/5;
+    grid-row: 1/23;
+}
+
+.ctn_cartas_audiovisual_cinco {
+    grid-column: 1/2;
+    grid-row: 25/48;
+}
+
+.ctn_cartas_audiovisual_seis {
+    grid-column: 2/3;
+    grid-row: 23/46;
+}
+
+.ctn_cartas_audiovisual_siete {
+    grid-column: 3/4;
+    grid-row: 25/48;
+}
+
+.ctn_cartas_audiovisual_ocho {
+    grid-column: 4/5;
+    grid-row: 23/46;
+}
+
+.ctn_cartas_audiovisual_nueve {
+    grid-column: 1/2;
+    grid-row: 48/71;
+}
+
+.ctn_cartas_audiovisual_diez {
+    grid-column: 2/3;
+    grid-row: 46/69;
+}
+
+.ctn_cartas_audiovisual_once {
+    grid-column: 3/4;
+    grid-row: 48/71;
+}
+
+.ctn_cartas_audiovisual_doce {
+    grid-column: 4/5;
+    grid-row: 46/69;
+}
+
+.fondo_diseno_manual {
+    background-image: url(../Recursos/manual_diseno.png);
+}
+
+.fondo_diseno_perlata {
+    background-image: url(../Recursos/perlata_diseno.png);
+}
+
+.fondo_diseno_perlata_producto {
+    background-image: url(../Recursos/diseno_perlata_producto.png);
+}
+
+.fondo_audiovisual_mtb {
+    background-image: url(../Recursos/mtb_audiovisual.png);
+}
+
+.fondo_audiovisual_f2r {
+    background-image: url(../Recursos/f2r_audiovisual.png);
+}
+
+.fondo_audiovisual_documental {
+    background-image: url(../Recursos/documental_audiovisual.png);
+}
+
+.fondo_audiovisual_crackbee {
+    background-image: url(../Recursos/Crackbee.png);
+}
+
+.fondo_audiovisual_tierra {
+    background-image: url(../Recursos/tierra_audiovisual.png);
+}
+
+.fondo_audiovisual_medellin {
+    background-image: url(../Recursos/medellin_audiovisual.png);
+}
+
+.fondo_audiovisual_pescador {
+    background-image: url(../Recursos/podcats_pescador.png);
+}
+
+.fondo_audiovisual_mama {
+    background-image: url(../Recursos/podcats_ha.png);
+}
+
+.fondo_audiovisual_entrenador {
+    background-image: url(../Recursos/podcats_entrenador.png);
+}
+
+.fondo_audiovisual_fusion {
+    background-image: url(../Recursos/ruta_fusion.png);
+}
+
+.fondo_audiovisual_go {
+    background-image: url(../Recursos/Go.jpg);
+}
+
+.fondo_audiovisual_go {
+    background-image: url(../Recursos/Go.jpg);
+}
+
+.fondo_audiovisual_ibague {
+    background-image: url(../Recursos/GranFondoIbague.png);
+}
+
+
+.cartas_ux_uno {
+    background-image: url(../Recursos/diseno_ux_branding.png);
+}
+
+.fondo_ux_brave {
+    background-image: url(../Recursos/brave_ux.png);
+}
+
+.fondo_ux_hefesto {
+    background-image: url(../Recursos/brave_ux_02.png);
+}
+
+.fondo_ux_shmuel {
+    background-image: url(../Recursos/shmuel_ux.png);
+}
+
+/* ----------------DISÑEO UX---------------- */
+.ctn_proyectos_ux {
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(25, 1fr); */
+}
+
+.ctn_cartas_ux_uno {
+    grid-column: 1/2;
+    grid-row: 3/25;
+}
+
+.ctn_cartas_ux_dos {
+    grid-column: 2/3;
+    grid-row: 1/23;
+}
+
+.ctn_cartas_ux_tres {
+    grid-column: 3/4;
+    grid-row: 3/25;
+}
+
+.ctn_cartas_ux_cuatro {
+    grid-column: 4/5;
+    grid-row: 1/23;
+}
+
+/* TABLET*/
+@media (min-width: 950px) and (max-width: 1100px) {
+
+    .ctn_proyectos_grafico,
+    .ctn_proyectos_audiovisual,
+    .ctn_proyectos_ux {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cartas_trabajos {
+        width: 100%;
+        aspect-ratio: 1 / 2;
+        height: auto;
+        grid-column: span 1 !important;
+        /* elimina columnas fijas */
+        grid-row: auto !important;
+        /* elimina filas fijas */
+    }
+}
+
+/* TABLET*/
+@media (min-width: 768px) and (max-width: 950px) {
+
+    .ctn_proyectos_grafico,
+    .ctn_proyectos_audiovisual,
+    .ctn_proyectos_ux {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cartas_trabajos {
+        width: 100%;
+        aspect-ratio: 1 / 2;
+        height: auto;
+        grid-column: span 1 !important;
+        /* elimina columnas fijas */
+        grid-row: auto !important;
+        /* elimina filas fijas */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .ctn_proyectos_grafico,
+    .ctn_proyectos_audiovisual,
+    .ctn_proyectos_ux {
+        grid-template-columns: 1fr;
+    }
+
+    .cartas_trabajos {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        height: auto;
+        grid-column: span 1 !important;
+        /* Asegura 1 columna por carta */
+        grid-row: auto !important;
+        /* Libera restricciones de filas */
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .input_mensaje {
+        width: 100%;
+    }
+
+    .enviar_form {
+        width: 50%;
+    }
+
+    .ctn_redes {
+        flex-direction: column;
+    }
+}
