@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Shmuel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+</head>
+
+<body style="background-color: #0F051D;">
+
+    <!-- ---------------- ENCABEZADO ----------------  -->
+    <header class="container-fluid fixed-top">
+        <div class="row d-flex justify-content-center align-items-center">
+            <nav class="col-lg-10 encabezado_escritorio">
+                <ul class="d-flex justify-content-between align-items-center gap-5 m-0 py-4">
+                    <li class="link-logo"><a href="#principal"><img src="./Recursos/logo-shmuel.svg" alt=""></a></li>
+                    <li><a href="#acerca_de" class="anima_degradado_link">Conoceme</a></li>
+                    <li><a href="./trabajos.html" class="anima_degradado_link">Trabajos</a></li>
+                    <li><a href="#habilidades" class="anima_degradado_link">Habilidades</a></li>
+                    <li class="link-contacto"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-lg hamburguesa" data-bs-theme="dark">
+                <div class="container-fluid d-flex justify-content-between align-items-center gap-3">
+                    <a href="./index.html">
+                        <img src="./Recursos/logo-shmuel.svg" alt="" width="60">
+                    </a>   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="background-color: #1a0833;"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                            <li>
+                                <a href="#acerca_de" class="anima_degradado_link">Conoceme</a>
+                            </li>
+                            <li>
+                                <a href="./trabajos.html" class="anima_degradado_link">Trabajos</a>
+                            </li>
+                            <li>
+                                <a href="#habilidades" class="anima_degradado_link">Habilidades</a>
+                            </li>
+                            <li class="link-contacto">
+                                <a href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- ---------------- CIRCULOS DEGRADADO ----------------  -->
+        <div class="ctn_degradado">
+            <img class="degradado_circular" src="./Recursos/gradient-circle.svg">
+            <img class="degradado_circular" src="./Recursos/gradient-circle.svg">
+        </div>
+
+        <!-- ---------------- SECCION PRINCIPAL ----------------  -->
+        <section id="principal" class="container-fluid d-flex justify-content-center align-items-center mb-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="imagenes_grid_principal"></div>
+                <div class="col-10 d-flex justify-content-center align-items-center flex-column gap-3">
+                    <h1 class="text-center text-uppercase titulo">animación y diseño Mi universo creativo</h1>
+                    <p class="text-center slogan fs-4 text-uppercase pt-">Transformo ideas en experiencias</p>
+                    <a class="link_degradado fs-4" href="#proyectos">Proyectos Destacados</a>
+                </div>
+                <div class="col-10 d-flex justify-content-between align-items-center ctn_imagenes_slider">
+                    <img src="./Recursos/colaboracion-gw.svg" alt="logo Gw">
+                    <img src="./Recursos/colaboracion-shimano.svg" alt="Logo Shimano">
+                    <img src="./Recursos/colaboracion-scott.svg" alt="Logo Scott">
+                    <img src="./Recursos/colaboracion-sportfitness.svg" alt="Logo Sporfitness">
+                    <img src="./Recursos/colaboracion-gx-motor.svg" alt="Logo gx-motor">
+
+                    <img src="./Recursos/colaboracion-gw.svg" alt="logo Gw">
+                    <img src="./Recursos/colaboracion-shimano.svg" alt="Logo Shimano">
+                    <img src="./Recursos/colaboracion-scott.svg" alt="Logo Scott">
+                    <img src="./Recursos/colaboracion-sportfitness.svg" alt="Logo Sporfitness">
+                    <img src="./Recursos/colaboracion-gx-motor.svg" alt="Logo gx-motor">
+                </div>
+            </div>
+        </section>
+        <!-- ----------------HABILIDADES - PROGRAMAS ----------------  -->
+        <section class="container-fluid my-5" id="habilidades">
+            <div class="row d-flex justify-content-center align-items-center gap-5">
+                <h2 class="text-center titulos">Programas
+                    <span class="titulos_degradados">Manejados</span>
+                </h2>
+                <div class="col-10 programas ">
+                    <!-- PHOTOSHOP -->
+                    <div class="cards_habilidades card_programa_uno d-flex justify-content-center align-items-center gap-3 p-3">
+                        <img src="./Recursos/logo_ps.png" alt="" width="150">
+                        <article class="text_habilidades">
+                            <p class="titulo_cartas pb-1">Adobe Photoshop</p>
+                            <p class="descripcion_cartas_habilidades">Un buen manejo de Ps, para diseño gráfico, retoque
+                                fotográfico y creación de piezas visuales.</p>
+                        </article>
+                    </div>
+                    <!-- ILLUTRATOR -->
+                    <div class="cards_habilidades card_programa_dos d-flex justify-content-center align-items-center gap-3 p-3">
+                        <img src="./Recursos/logo_ai.png" alt="" width="150">
+                        <article class="text_habilidades">
+                            <h5 class="titulo_cartas pb-3">Adobe Ilustrator</h5>
+                            <p class="descripcion_cartas_habilidades">Creación de ilustraciones vectoriales con Adobe
+                                Illustrator, logotipos y piezas gráficas precisas y escalables</p>
+                        </article>
+                    </div>
+                    <!-- FIGMA -->
+                    <div class="cards_habilidades card_programa_tres d-flex justify-content-center align-items-center gap-3 p-3">
+                        <img src="./Recursos/logo_figma.png" alt="" width="150">
+                        <article class="text_habilidades">
+                            <h5 class="titulo_cartas pb-3">Figma</h5>
+                            <p class="descripcion_cartas_habilidades">Diseño interfaces y prototipos interactivos en
+                                Figma, optimizando la experiencia de usuario con enfoque colaborativo y funcional.</p>
+                        </article>
+                    </div>
+                    <!-- DAVINCI RESOLVE -->
+                    <div class="cards_habilidades card_programa_cuatro d-flex justify-content-center align-items-center gap-3 p-3">
+                        <img src="./Recursos/logo_davinci.png" alt="" width="150">
+                        <article class="text_habilidades">
+                            <h5 class="titulo_cartas pb-3">Davinci Resolve</h5>
+                            <p class="descripcion_cartas_habilidades">Uso DaVinci Resolve para edición de video y
+                                corrección de color, logrando acabados cinematográficos de buena calidad.</p>
+                        </article>
+                    </div>
+                    <!-- AFTER EFFECTS -->
+                    <div class="cards_habilidades card_programa_cinco d-flex justify-content-center align-items-center gap-3 p-3">
+                        <img src="./Recursos/logo_ae.png" alt="" width="150">
+                        <article class="text_habilidades">
+                            <h5 class="titulo_cartas pb-3">After Effects</h5>
+                            <p class="descripcion_cartas_habilidades">Animación de gráficos con After Effects, efectos
+                                visuales y composiciones en motion graphics.</p>
+                        </article>
+                    </div>
+                    <!-- PREMIERE PRO -->
+                    <div class="cards_habilidades card_programa_seis d-flex justify-content-center align-items-center gap-3 p-3">
+                        <img src="./Recursos/logo_pr.png" alt="" width="150">
+                        <article class="text_habilidades">
+                            <h5 class="titulo_cartas pb-3">Adobe Premiere Pro</h5>
+                            <p class="descripcion_cartas_habilidades">Edición de video con Premiere Pro, enfocada en
+                                narrativas visuales dinámicas, cortes precisos y efectos integrados.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------ACERCA DE ----------------  -->
+        <section id="acerca_de" class="container-fluid mb-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <!-- ACERCA 01 -->
+                <h2 class="text-center titulos pb-4">
+                    Conoce a
+                    <span class="titulos_degradados">Shmuel</span>
+                </h2>
+
+                <!-- IMAGEN 01 -->
+                <div class="imagen_acerca_01 col-lg-4 d-flex justify-content-start align-items-center">
+                    <img src="./Recursos/personaje_flotando_2.png" alt="" class="img-fluid imagen_acerca_de">
+                </div>
+
+                <!-- TEXTO 01 -->
+                <div class="texto_acerca_01 col-lg-6 col-md-5 mt-5 ">
+                    <span class="numeros">01</span>
+                    <h3 class="subtitulos">Pasión por Crear, Vivir y Cultivar</h3>
+                    <p class="texto">Hola, soy Samuel, un joven de 19 años nací en Medellín, Colombia — mi querida
+                        ciudad
+                        de la Eterna Primavera.</p>
+                    <p class="texto">Me apasiona el fútbol y la natación, y disfruto explorar el arte en todas sus
+                        formas:
+                        desde imágenes, videos y pinturas hasta dibujos.</p>
+                    <p class="texto">Me gusta mucho la naturaleza. Me encantaría sembrar y vivir de lo que cosecho junto
+                        a toda mi familia, ya que creo que un ambiente natural es mucho mejor que la ciudad.</p>
+                </div>
+                <!-- ACERCA 02 -->
+                <div class="texto_acerca_02 col-lg-6 col-md-5 my-5">
+                    <span class="numeros">02</span>
+                    <h3 class="subtitulos">Visualiza, Anima, Programa</h3>
+                    <p class="texto">Soy Tecnólogo en Producción de Multimedia, con una profunda pasión por el arte en
+                        todas sus expresiones:
+                        desde la imagen y el video, hasta la pintura y el dibujo.
+                    </p>
+                    <p class="texto">Disfruto explorar la creatividad a través del diseño, la animación y la
+                        programación,
+                        combinando estas disciplinas para dar vida a experiencias visuales y funcionales, especialmente
+                        en
+                        el desarrollo de sitios web.
+                    </p>
+                </div>
+                <div class="imagen_acerca_02 col-lg-4 d-flex justify-content-start align-items-center">
+                    <img src="./Recursos/personaje_flotando_frente_pc_dos.png" alt="" class="img-fluid imagen_acerca_de">
+                </div>
+            </div>
+        </section>
+        <!-- ----------------PROYECTOS----------------  -->
+        <section id="proyectos" class="container-fluid mt-5">
+            <div class="row d-flex justify-content-center align-items-center flex-column">
+                <h2 class="text-center titulos">Mejores
+                    <span class="titulos_degradados">Proyectos</span>
+                </h2>
+                <div class="mejores_proyectos col-10 pt-5">
+                    <!-- CARTA 01 -->
+                     
+                    <div class="ctn_cartas ctn_img_1 d-flex justify-content-start flex-column p-3">
+                        <div class="back_img fondo_miniatura_santi"></div>
+                        <article class="w-100 mt-3">
+                            <a href="https://www.instagram.com/reel/DDxmfMThvC_/" target="_blank" class="titulo_cartas text-center">santago botero</a>
+                            <p class="descripcion_cartas text-center">miniatura</p>
+                        </article>
+                    </div>
+                    <!-- CARTA 02 -->
+                    <div class="ctn_cartas ctn_img_2 d-flex justify-content-start flex-column p-3">
+                        <div class="back_img fondo_corre_mi_tierra"></div>
+                        <article class="w-100 mt-3">
+                            <a href="https://drive.google.com/drive/folders/11Zx1elnAQr2Kq8LyZJB7ZGPxue53e29V" target="_blank" class="titulo_cartas text-center">corre mi tierra</a>
+                            <p class="descripcion_cartas text-center">edición de video</p>
+                        </article>
+                    </div>
+                    <!-- CARTA 03 -->
+                    <div class="ctn_cartas ctn_img_3 d-flex justify-content-start flex-column p-3">
+                        <div class="back_img fondo_f2r"></div>
+                        <article class="w-100 mt-3">
+                            <a href="https://drive.google.com/drive/folders/1fLrXk7hXmCockM6l8snyzidzP5r8MMU0" target="_blank" class="titulo_cartas text-center">f2r</a>
+                            <p class="descripcion_cartas text-center">edición de video</p>
+                        </article>
+                    </div>
+                    <!-- CARTA 04 -->
+                    <div class="ctn_cartas ctn_img_4 d-flex justify-content-start flex-column p-3">
+                        <div class="back_img fondo_crackbee"></div>
+                        <article class="w-100 mt-3">
+                            <a href="https://www.youtube.com/watch?v=8Ys0L7paNP4" target="_blank" class="titulo_cartas text-center">crackbee</a>
+                            <p class="descripcion_cartas text-center">edición y grabación</p>
+                        </article>
+                    </div>
+                    <!-- CARTA 05 -->
+                    <div class="ctn_cartas ctn_img_5 d-flex justify-content-start flex-column p-3">
+                        <div class="back_img fondo_cumpleaños"></div>
+                        <article class="w-100 mt-3">
+                            <a href="https://drive.google.com/drive/folders/1KkZpVcJGp_rwZckPAcy3SbQnEIGaRZ6M" class="titulo_cartas text-center" target="_blank">cumpleaños ha</a>
+                            <p class="descripcion_cartas text-center">animación</p>
+                        </article>
+                    </div>
+                    <!-- CARTA 06 -->
+                    <div class="ctn_cartas ctn_img_6 d-flex justify-content-start flex-column p-3">
+                        <div class="back_img fondo_nebraska"></div>
+                        <article class="w-100 mt-3">
+                            <a href="https://drive.google.com/drive/folders/1KkZpVcJGp_rwZckPAcy3SbQnEIGaRZ6M" class="titulo_cartas text-center" target="_blank">nebraska</a>
+                            <p class="descripcion_cartas text-center">edición de video</p>
+                        </article>
+                    </div>
+                    <!-- CARTA 07 -->
+                    <div class="ctn_cartas ctn_img_7 d-flex justify-content-start flex-column p-3">
+                        <div class="back_img fondo_maraton_medellin"></div>
+                        <article class="w-100 mt-3">
+                            <a href="https://drive.google.com/drive/folders/11Zx1elnAQr2Kq8LyZJB7ZGPxue53e29V" class="titulo_cartas text-center" target="_blank">
+                                maratón medellín</a>
+                            <p class="descripcion_cartas text-center">edición de video</p>
+                        </article>
+                    </div>
+                    <!-- CARTA 08 -->
+                    <div class="ctn_cartas ctn_img_8 d-flex justify-content-start flex-column p-3">
+                        <div class="back_img fondo_gran_fondo_ibague"></div>
+                        <article class="w-100 mt-3">
+                            <a href="https://www.instagram.com/reel/DA_y4H5y4cp/" class="titulo_cartas text-center" target="_blank">fondo ibague</a>
+                            <p class="descripcion_cartas text-center">edición de video</p>
+                        </article>
+                    </div>
+                </div>
+                <article class="col-lg-3 col-md-5 d-flex justify-content-center align-items-center pt-5">
+                    <a chref="" class="link_degradado fs-4 d-inline-block ir_trabajos"> Ir a más Trabajos</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid mt-5" id="contacto">
+        <div class="row d-flex justify-content-center align-items-center flex-column">
+            <!-- CAJA CON FONDO -->
+            <div class="imagen_slider_footer"></div>
+            <!--INFORMACIÓN - TEXTO - SOBRE MÍ -->
+            <h2 class="titulos text-center pt-4">
+                Trabaja <span class="titulos_degradados">Conmigo!</span>
+            </h2>
+            <p class="text-center texto fs-5">
+                Contáctame. Estoy listo para colaborar en tu próximo proyecto. <br>
+                ¿Comenzamos a trabajar?
+            </p>
+            <article class="col-lg-4 mt-3 d-flex justify-content-center align-items-center">
+                <a href="https://wa.me/573126070705" target="_blank" class="enviar_form w-75 text-center">Escríbeme por WhatsApp <i class="bi bi-whatsapp"></i></a>
+            </article>
+            <!-- LÍNEA -->
+            <hr class="linea col-10 mt-5">
+            <p class="texto pt-3 text-center">© Shmuel. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+</html>
