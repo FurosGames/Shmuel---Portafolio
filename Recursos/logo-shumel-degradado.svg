@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Iliustración" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 820.65 798.21">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#Degradado_sin_nombre_60-2);
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 87.42px;
+      }
+
+      .cls-2 {
+        stroke: url(#Degradado_sin_nombre_60);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_60" data-name="Degradado sin nombre 60" x1="3572.09" y1="237.83" x2="4392.74" y2="237.83" gradientTransform="translate(4392.74) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff00ea"/>
+      <stop offset=".26" stop-color="#c200ee"/>
+      <stop offset=".77" stop-color="#5200f8"/>
+      <stop offset="1" stop-color="#2600fc"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_60-2" data-name="Degradado sin nombre 60" x1="3598.05" y1="413.85" x2="4366.78" y2="413.85" gradientTransform="translate(4392.74) rotate(-180) scale(1 -1)" xlink:href="#Degradado_sin_nombre_60"/>
+  </defs>
+  <polyline class="cls-2" points="789.74 30.91 406.8 413.85 30.91 37.96"/>
+  <circle class="cls-1" cx="410.33" cy="413.85" r="340.65"/>
+</svg>
